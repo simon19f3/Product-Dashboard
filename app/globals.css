@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+/* =========================================
+   CSS VARIABLES (LIGHT + DARK THEMES)
+   ========================================= */
+
+:root {
+  /* ---------- LIGHT THEME ---------- */
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+
+  /* Warm neutral surface to complement the Lime Green */
+  --surface: #f4f5f0;
+  --surface-hover: #e9ece0;
+
+  /* Accents - The New Color */
+  --primary: #ABC41D;       /* Your specific color */
+  --primary-light: #c5db46; /* Slightly lighter for hovers/gradients */
+
+  /* Glass effect */
+  --glass-bg: rgba(255, 255, 255, 0.65);
+  --glass-border: rgba(171, 196, 29, 0.2); /* Tinted with the new green */
+}
+
+.dark {
+  /* ---------- DARK THEME ---------- */
+  --background: #12140e;     /* Deep warm black (instead of blue-black) */
+  --foreground: #f2f2f2;
+
+  /* Deeper warm charcoal/olive layering */
+  --surface: #1f2119;  
+  --surface-hover: #2e3026;
+
+  /* Accents */
+  --primary: #ABC41D; 
+  --primary-light: #d4e66a; /* Lighter/Brighter for contrast on dark mode */
+
+  /* Dark glass */
+  --glass-bg: rgba(18, 20, 14, 0.65);
+  --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+/* =========================================
+   BASE STYLING
+   ========================================= */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* Smooth theme switching */
+* {
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
