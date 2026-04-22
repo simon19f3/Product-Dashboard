@@ -194,7 +194,6 @@ export default function DashboardPage() {
                     <RadialBar
                       label={{ position: 'insideStart', fill: '#fff', fontSize: 10, fontWeight: 'bold' }}
                       background={{ fill: 'var(--surface-hover)' }}
-                      clockWise
                       dataKey="discountRatio"
                       cornerRadius={10}
                     />
